@@ -1,0 +1,6 @@
+framework module Pods_symbiose_act3_symbiose_act3UITests {
+  umbrella header "Pods-symbiose_act3-symbiose_act3UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

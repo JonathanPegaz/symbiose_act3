@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B3AB067243A5BDBAF794872 /* Pods_symbiose_act3_symbiose_act3UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E22D58D035E511323DC03AB4 /* Pods_symbiose_act3_symbiose_act3UITests.framework */; };
+		6D9AFD6E24F182FFD8D2364D /* Pods_symbiose_act3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7ED2C075BE75C974104CE54 /* Pods_symbiose_act3.framework */; };
+		AB5128D8296B4D4F00DA18FC /* model_unquant.tflite in Resources */ = {isa = PBXBuildFile; fileRef = AB5128D6296B4D4F00DA18FC /* model_unquant.tflite */; };
+		AB5128D9296B4D4F00DA18FC /* labels.txt in Resources */ = {isa = PBXBuildFile; fileRef = AB5128D7296B4D4F00DA18FC /* labels.txt */; };
+		ABAB67032965FE2100783B14 /* BLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAB67022965FE2100783B14 /* BLEManager.swift */; };
+		ABAB6705296995E800783B14 /* BLEObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAB6704296995E800783B14 /* BLEObservable.swift */; };
+		ABAB67072969961100783B14 /* BLEUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAB67062969961100783B14 /* BLEUtils.swift */; };
+		ABAB67092969A70200783B14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAB67082969A70100783B14 /* ViewController.swift */; };
+		ABAB670D2969A97600783B14 /* ViewControllerTFLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAB670C2969A97600783B14 /* ViewControllerTFLite.swift */; };
+		ABAB670F2969A98800783B14 /* PixelBufferExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAB670E2969A98800783B14 /* PixelBufferExtensions.swift */; };
 		ABD38184295BC1F70034835A /* symbiose_act3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD38183295BC1F70034835A /* symbiose_act3App.swift */; };
 		ABD38186295BC1F70034835A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD38185295BC1F70034835A /* ContentView.swift */; };
-		ABD38188295BC1F80034835A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABD38187295BC1F80034835A /* Assets.xcassets */; };
-		ABD3818B295BC1F80034835A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABD3818A295BC1F80034835A /* Preview Assets.xcassets */; };
 		ABD38195295BC1F80034835A /* symbiose_act3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD38194295BC1F80034835A /* symbiose_act3Tests.swift */; };
 		ABD3819F295BC1F80034835A /* symbiose_act3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD3819E295BC1F80034835A /* symbiose_act3UITests.swift */; };
 		ABD381A1295BC1F80034835A /* symbiose_act3UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD381A0295BC1F80034835A /* symbiose_act3UITestsLaunchTests.swift */; };
+		DDE0575F7EE086EC39CD26E5 /* Pods_symbiose_act3Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C945C2AE9F44DD01110EE246 /* Pods_symbiose_act3Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +43,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B96ACF070330AA2D0CC2912 /* Pods-symbiose_act3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-symbiose_act3.release.xcconfig"; path = "Target Support Files/Pods-symbiose_act3/Pods-symbiose_act3.release.xcconfig"; sourceTree = "<group>"; };
+		573E8FCD84C47F4145662A51 /* Pods-symbiose_act3Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-symbiose_act3Tests.release.xcconfig"; path = "Target Support Files/Pods-symbiose_act3Tests/Pods-symbiose_act3Tests.release.xcconfig"; sourceTree = "<group>"; };
+		7CE478BF31CD4C60DF63415C /* Pods-symbiose_act3-symbiose_act3UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-symbiose_act3-symbiose_act3UITests.release.xcconfig"; path = "Target Support Files/Pods-symbiose_act3-symbiose_act3UITests/Pods-symbiose_act3-symbiose_act3UITests.release.xcconfig"; sourceTree = "<group>"; };
+		8956A5CC99A9528958BCD749 /* Pods-symbiose_act3Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-symbiose_act3Tests.debug.xcconfig"; path = "Target Support Files/Pods-symbiose_act3Tests/Pods-symbiose_act3Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		AB5128D6296B4D4F00DA18FC /* model_unquant.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = model_unquant.tflite; sourceTree = "<group>"; };
+		AB5128D7296B4D4F00DA18FC /* labels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = labels.txt; sourceTree = "<group>"; };
+		ABAB67022965FE2100783B14 /* BLEManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEManager.swift; sourceTree = "<group>"; };
+		ABAB6704296995E800783B14 /* BLEObservable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEObservable.swift; sourceTree = "<group>"; };
+		ABAB67062969961100783B14 /* BLEUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEUtils.swift; sourceTree = "<group>"; };
+		ABAB67082969A70100783B14 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ABAB670C2969A97600783B14 /* ViewControllerTFLite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTFLite.swift; sourceTree = "<group>"; };
+		ABAB670E2969A98800783B14 /* PixelBufferExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PixelBufferExtensions.swift; sourceTree = "<group>"; };
 		ABD38180295BC1F70034835A /* symbiose_act3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = symbiose_act3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABD38183295BC1F70034835A /* symbiose_act3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = symbiose_act3App.swift; sourceTree = "<group>"; };
 		ABD38185295BC1F70034835A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +65,11 @@
 		ABD3819A295BC1F80034835A /* symbiose_act3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = symbiose_act3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABD3819E295BC1F80034835A /* symbiose_act3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = symbiose_act3UITests.swift; sourceTree = "<group>"; };
 		ABD381A0295BC1F80034835A /* symbiose_act3UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = symbiose_act3UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AFF4B0F66F8E34B31C1908D8 /* Pods-symbiose_act3-symbiose_act3UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-symbiose_act3-symbiose_act3UITests.debug.xcconfig"; path = "Target Support Files/Pods-symbiose_act3-symbiose_act3UITests/Pods-symbiose_act3-symbiose_act3UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C7ED2C075BE75C974104CE54 /* Pods_symbiose_act3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_symbiose_act3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C945C2AE9F44DD01110EE246 /* Pods_symbiose_act3Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_symbiose_act3Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD66BD439A1FD02437E35A71 /* Pods-symbiose_act3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-symbiose_act3.debug.xcconfig"; path = "Target Support Files/Pods-symbiose_act3/Pods-symbiose_act3.debug.xcconfig"; sourceTree = "<group>"; };
+		E22D58D035E511323DC03AB4 /* Pods_symbiose_act3_symbiose_act3UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_symbiose_act3_symbiose_act3UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D9AFD6E24F182FFD8D2364D /* Pods_symbiose_act3.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDE0575F7EE086EC39CD26E5 /* Pods_symbiose_act3Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,12 +93,65 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B3AB067243A5BDBAF794872 /* Pods_symbiose_act3_symbiose_act3UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A803D3F5B33C8FEBD2803B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD66BD439A1FD02437E35A71 /* Pods-symbiose_act3.debug.xcconfig */,
+				2B96ACF070330AA2D0CC2912 /* Pods-symbiose_act3.release.xcconfig */,
+				AFF4B0F66F8E34B31C1908D8 /* Pods-symbiose_act3-symbiose_act3UITests.debug.xcconfig */,
+				7CE478BF31CD4C60DF63415C /* Pods-symbiose_act3-symbiose_act3UITests.release.xcconfig */,
+				8956A5CC99A9528958BCD749 /* Pods-symbiose_act3Tests.debug.xcconfig */,
+				573E8FCD84C47F4145662A51 /* Pods-symbiose_act3Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7773F007D30E9669C02F52E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7ED2C075BE75C974104CE54 /* Pods_symbiose_act3.framework */,
+				E22D58D035E511323DC03AB4 /* Pods_symbiose_act3_symbiose_act3UITests.framework */,
+				C945C2AE9F44DD01110EE246 /* Pods_symbiose_act3Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AB5128CD296AE43400DA18FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB5128D7296B4D4F00DA18FC /* labels.txt */,
+				AB5128D6296B4D4F00DA18FC /* model_unquant.tflite */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ABAB670A2969A72A00783B14 /* Ble */ = {
+			isa = PBXGroup;
+			children = (
+				ABAB67082969A70100783B14 /* ViewController.swift */,
+				ABAB67062969961100783B14 /* BLEUtils.swift */,
+				ABAB6704296995E800783B14 /* BLEObservable.swift */,
+				ABAB67022965FE2100783B14 /* BLEManager.swift */,
+			);
+			path = Ble;
+			sourceTree = "<group>";
+		};
+		ABAB670B2969A95D00783B14 /* TFLite */ = {
+			isa = PBXGroup;
+			children = (
+				ABAB670E2969A98800783B14 /* PixelBufferExtensions.swift */,
+				ABAB670C2969A97600783B14 /* ViewControllerTFLite.swift */,
+			);
+			path = TFLite;
+			sourceTree = "<group>";
+		};
 		ABD38177295BC1F70034835A = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +159,8 @@
 				ABD38193295BC1F80034835A /* symbiose_act3Tests */,
 				ABD3819D295BC1F80034835A /* symbiose_act3UITests */,
 				ABD38181295BC1F70034835A /* Products */,
+				4A803D3F5B33C8FEBD2803B0 /* Pods */,
+				7773F007D30E9669C02F52E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +177,9 @@
 		ABD38182295BC1F70034835A /* symbiose_act3 */ = {
 			isa = PBXGroup;
 			children = (
+				AB5128CD296AE43400DA18FC /* Model */,
+				ABAB670B2969A95D00783B14 /* TFLite */,
+				ABAB670A2969A72A00783B14 /* Ble */,
 				ABD38183295BC1F70034835A /* symbiose_act3App.swift */,
 				ABD38185295BC1F70034835A /* ContentView.swift */,
 				ABD38187295BC1F80034835A /* Assets.xcassets */,
@@ -134,6 +220,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ABD381A4295BC1F80034835A /* Build configuration list for PBXNativeTarget "symbiose_act3" */;
 			buildPhases = (
+				17925F5AE8881DDDD0986EA2 /* [CP] Check Pods Manifest.lock */,
 				ABD3817C295BC1F70034835A /* Sources */,
 				ABD3817D295BC1F70034835A /* Frameworks */,
 				ABD3817E295BC1F70034835A /* Resources */,
@@ -151,6 +238,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ABD381A7295BC1F80034835A /* Build configuration list for PBXNativeTarget "symbiose_act3Tests" */;
 			buildPhases = (
+				DB682910AB195C558D639308 /* [CP] Check Pods Manifest.lock */,
 				ABD3818C295BC1F80034835A /* Sources */,
 				ABD3818D295BC1F80034835A /* Frameworks */,
 				ABD3818E295BC1F80034835A /* Resources */,
@@ -169,6 +257,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ABD381AA295BC1F80034835A /* Build configuration list for PBXNativeTarget "symbiose_act3UITests" */;
 			buildPhases = (
+				165BCB74CFE748F08E7DA110 /* [CP] Check Pods Manifest.lock */,
 				ABD38196295BC1F80034835A /* Sources */,
 				ABD38197295BC1F80034835A /* Frameworks */,
 				ABD38198295BC1F80034835A /* Resources */,
@@ -231,8 +320,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABD3818B295BC1F80034835A /* Preview Assets.xcassets in Resources */,
-				ABD38188295BC1F80034835A /* Assets.xcassets in Resources */,
+				AB5128D8296B4D4F00DA18FC /* model_unquant.tflite in Resources */,
+				AB5128D9296B4D4F00DA18FC /* labels.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,13 +341,88 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		165BCB74CFE748F08E7DA110 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-symbiose_act3-symbiose_act3UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		17925F5AE8881DDDD0986EA2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-symbiose_act3-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB682910AB195C558D639308 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-symbiose_act3Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ABD3817C295BC1F70034835A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABAB67092969A70200783B14 /* ViewController.swift in Sources */,
 				ABD38186295BC1F70034835A /* ContentView.swift in Sources */,
+				ABAB670F2969A98800783B14 /* PixelBufferExtensions.swift in Sources */,
+				ABAB67032965FE2100783B14 /* BLEManager.swift in Sources */,
 				ABD38184295BC1F70034835A /* symbiose_act3App.swift in Sources */,
+				ABAB670D2969A97600783B14 /* ViewControllerTFLite.swift in Sources */,
+				ABAB67072969961100783B14 /* BLEUtils.swift in Sources */,
+				ABAB6705296995E800783B14 /* BLEObservable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,26 +575,30 @@
 		};
 		ABD381A5295BC1F80034835A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD66BD439A1FD02437E35A71 /* Pods-symbiose_act3.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"symbiose_act3/Preview Content\"";
 				DEVELOPMENT_TEAM = 6V8Z3B326L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = cam;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Jonathan.symbiose-act3";
+				PRODUCT_BUNDLE_IDENTIFIER = Jonathan.Slider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -440,26 +608,30 @@
 		};
 		ABD381A6295BC1F80034835A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B96ACF070330AA2D0CC2912 /* Pods-symbiose_act3.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"symbiose_act3/Preview Content\"";
 				DEVELOPMENT_TEAM = 6V8Z3B326L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = cam;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Jonathan.symbiose-act3";
+				PRODUCT_BUNDLE_IDENTIFIER = Jonathan.Slider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -469,6 +641,7 @@
 		};
 		ABD381A8295BC1F80034835A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8956A5CC99A9528958BCD749 /* Pods-symbiose_act3Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -489,6 +662,7 @@
 		};
 		ABD381A9295BC1F80034835A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 573E8FCD84C47F4145662A51 /* Pods-symbiose_act3Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -509,6 +683,7 @@
 		};
 		ABD381AB295BC1F80034835A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFF4B0F66F8E34B31C1908D8 /* Pods-symbiose_act3-symbiose_act3UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +702,7 @@
 		};
 		ABD381AC295BC1F80034835A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CE478BF31CD4C60DF63415C /* Pods-symbiose_act3-symbiose_act3UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
