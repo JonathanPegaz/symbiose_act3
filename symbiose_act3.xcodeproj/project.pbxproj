@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		4B3AB067243A5BDBAF794872 /* Pods_symbiose_act3_symbiose_act3UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E22D58D035E511323DC03AB4 /* Pods_symbiose_act3_symbiose_act3UITests.framework */; };
 		6D9AFD6E24F182FFD8D2364D /* Pods_symbiose_act3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7ED2C075BE75C974104CE54 /* Pods_symbiose_act3.framework */; };
-		AB5128D8296B4D4F00DA18FC /* model_unquant.tflite in Resources */ = {isa = PBXBuildFile; fileRef = AB5128D6296B4D4F00DA18FC /* model_unquant.tflite */; };
-		AB5128D9296B4D4F00DA18FC /* labels.txt in Resources */ = {isa = PBXBuildFile; fileRef = AB5128D7296B4D4F00DA18FC /* labels.txt */; };
 		ABAB67032965FE2100783B14 /* BLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAB67022965FE2100783B14 /* BLEManager.swift */; };
 		ABAB6705296995E800783B14 /* BLEObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAB6704296995E800783B14 /* BLEObservable.swift */; };
 		ABAB67072969961100783B14 /* BLEUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABAB67062969961100783B14 /* BLEUtils.swift */; };
@@ -23,6 +21,8 @@
 		ABD3819F295BC1F80034835A /* symbiose_act3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD3819E295BC1F80034835A /* symbiose_act3UITests.swift */; };
 		ABD381A1295BC1F80034835A /* symbiose_act3UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD381A0295BC1F80034835A /* symbiose_act3UITestsLaunchTests.swift */; };
 		DDE0575F7EE086EC39CD26E5 /* Pods_symbiose_act3Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C945C2AE9F44DD01110EE246 /* Pods_symbiose_act3Tests.framework */; };
+		EDF59FC9296EC2B100F4739F /* labels.txt in Resources */ = {isa = PBXBuildFile; fileRef = EDF59FC7296EC2B100F4739F /* labels.txt */; };
+		EDF59FCA296EC2B100F4739F /* model_unquant.tflite in Resources */ = {isa = PBXBuildFile; fileRef = EDF59FC8296EC2B100F4739F /* model_unquant.tflite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +47,6 @@
 		573E8FCD84C47F4145662A51 /* Pods-symbiose_act3Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-symbiose_act3Tests.release.xcconfig"; path = "Target Support Files/Pods-symbiose_act3Tests/Pods-symbiose_act3Tests.release.xcconfig"; sourceTree = "<group>"; };
 		7CE478BF31CD4C60DF63415C /* Pods-symbiose_act3-symbiose_act3UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-symbiose_act3-symbiose_act3UITests.release.xcconfig"; path = "Target Support Files/Pods-symbiose_act3-symbiose_act3UITests/Pods-symbiose_act3-symbiose_act3UITests.release.xcconfig"; sourceTree = "<group>"; };
 		8956A5CC99A9528958BCD749 /* Pods-symbiose_act3Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-symbiose_act3Tests.debug.xcconfig"; path = "Target Support Files/Pods-symbiose_act3Tests/Pods-symbiose_act3Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		AB5128D6296B4D4F00DA18FC /* model_unquant.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = model_unquant.tflite; sourceTree = "<group>"; };
-		AB5128D7296B4D4F00DA18FC /* labels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = labels.txt; sourceTree = "<group>"; };
 		ABAB67022965FE2100783B14 /* BLEManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEManager.swift; sourceTree = "<group>"; };
 		ABAB6704296995E800783B14 /* BLEObservable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEObservable.swift; sourceTree = "<group>"; };
 		ABAB67062969961100783B14 /* BLEUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEUtils.swift; sourceTree = "<group>"; };
@@ -70,6 +68,8 @@
 		C945C2AE9F44DD01110EE246 /* Pods_symbiose_act3Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_symbiose_act3Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD66BD439A1FD02437E35A71 /* Pods-symbiose_act3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-symbiose_act3.debug.xcconfig"; path = "Target Support Files/Pods-symbiose_act3/Pods-symbiose_act3.debug.xcconfig"; sourceTree = "<group>"; };
 		E22D58D035E511323DC03AB4 /* Pods_symbiose_act3_symbiose_act3UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_symbiose_act3_symbiose_act3UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDF59FC7296EC2B100F4739F /* labels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = labels.txt; sourceTree = "<group>"; };
+		EDF59FC8296EC2B100F4739F /* model_unquant.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = model_unquant.tflite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,8 +126,8 @@
 		AB5128CD296AE43400DA18FC /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AB5128D7296B4D4F00DA18FC /* labels.txt */,
-				AB5128D6296B4D4F00DA18FC /* model_unquant.tflite */,
+				EDF59FC7296EC2B100F4739F /* labels.txt */,
+				EDF59FC8296EC2B100F4739F /* model_unquant.tflite */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -320,8 +320,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB5128D8296B4D4F00DA18FC /* model_unquant.tflite in Resources */,
-				AB5128D9296B4D4F00DA18FC /* labels.txt in Resources */,
+				EDF59FCA296EC2B100F4739F /* model_unquant.tflite in Resources */,
+				EDF59FC9296EC2B100F4739F /* labels.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,7 +598,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Jonathan.Slider;
+				PRODUCT_BUNDLE_IDENTIFIER = Jonathan.Symbiose;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -631,7 +631,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Jonathan.Slider;
+				PRODUCT_BUNDLE_IDENTIFIER = Jonathan.Symbiose;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

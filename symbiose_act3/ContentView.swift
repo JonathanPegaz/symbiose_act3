@@ -37,7 +37,7 @@ struct ContentView: View {
             }
         }
         .onChange(of: tflite.resultsLabel) { newValue in
-            if(tflite.resultsLabel == "0 ok" && tflite.resultsConfidence > 0.8){
+            if(tflite.resultsLabel == "0 Pattern_1" && tflite.resultsConfidence > 0.8){
                 print("Contactble")
                 BLEact3.sendString(str: "ok")
             }

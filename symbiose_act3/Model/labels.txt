@@ -1,2 +1,6 @@
-0 ok
-1 pas ok
+0 Pattern_1 300Hz
+1 Pattern_3 355Hz
+2 Pattern_4 373Hz
+3 Pattern_5 371Hz
+4 Pattern_6 369Hz
+5 Pattern_7 364Hz
