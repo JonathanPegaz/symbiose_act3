@@ -14,13 +14,16 @@ class BLEController: UIViewController,CBPeripheralManagerDelegate, ObservableObj
     
     @Published var bleStatus: Bool = false
     
-    let authCBUUID = CBUUID(string: "B85C752C-80CD-473C-BFE4-1756E1B50275")
-    let writeCBUUID = CBUUID(string: "35DE80EA-FFC1-4947-B1A1-594AE803CA6A")
-    let readCBUUID = CBUUID(string: "7B095DDB-D145-4783-8A5D-D5F06D548476")
+    let authCBUUID = CBUUID(string: "B210763B-B12E-40F3-9AB5-2C75385CDD09")
+    let writeCBUUID = CBUUID(string: "998AEEFC-5721-4CD6-89FF-277B9FD38D1D")
+    let readCBUUID = CBUUID(string: "2E4B84ED-A3BD-40A3-8382-ACBBAFA8BC7B")
     
     private var service: CBUUID!
     private let value = "AD34E"
     private var peripheralManager : CBPeripheralManager!
+    
+    var myCharacteristic1:CBMutableCharacteristic?
+    var myCharacteristic2:CBMutableCharacteristic?
     
     func load() {
         peripheralManager = CBPeripheralManager(delegate: self, queue: nil)
@@ -50,15 +53,14 @@ class BLEController: UIViewController,CBPeripheralManagerDelegate, ObservableObj
         let valueData = value.data(using: .utf8)
         
         // 1. Create instance of CBMutableCharcateristic
-        let myCharacteristic1 = CBMutableCharacteristic(type: writeCBUUID, properties: [.notify, .write, .read], value: nil, permissions: [.readable, .writeable])
-        let myCharacteristic2 = CBMutableCharacteristic(type: readCBUUID, properties: [.read], value: valueData, permissions: [.readable])
-       
+        myCharacteristic1 = CBMutableCharacteristic(type: writeCBUUID, properties: [.notify, .write, .read], value: nil, permissions: [.readable, .writeable])
+        myCharacteristic2 = CBMutableCharacteristic(type: readCBUUID, properties: [.notify, .write, .read], value: nil, permissions: [.readable, .writeable])
         // 2. Create instance of CBMutableService
         service = authCBUUID
         let myService = CBMutableService(type: service, primary: true)
         
         // 3. Add characteristics to the service
-        myService.characteristics = [myCharacteristic1, myCharacteristic2]
+        myService.characteristics = [myCharacteristic1!, myCharacteristic2!]
         
         // 4. Add service to peripheralManager
         peripheralManager.add(myService)
@@ -71,11 +73,18 @@ class BLEController: UIViewController,CBPeripheralManagerDelegate, ObservableObj
     
     func startAdvertising() {
         messageLabel = "Advertising Data"
-        peripheralManager.startAdvertising([CBAdvertisementDataLocalNameKey : "BLEPeripheralApp", CBAdvertisementDataServiceUUIDsKey : [service]])
+        peripheralManager.startAdvertising([CBAdvertisementDataLocalNameKey : "symbioseact3", CBAdvertisementDataServiceUUIDsKey : [service]])
         print("Started Advertising")
         
     }
     
+    func stopAdvertising() {
+        peripheralManager.stopAdvertising()
+        
+    }
+    func sendEndValue(){
+        peripheralManager.updateValue("endact3".data(using: .utf8)!, for: myCharacteristic1!, onSubscribedCentrals: nil)
+    }
     
     func peripheralManager(_ peripheral: CBPeripheralManager, didReceiveRead request: CBATTRequest) {
         
