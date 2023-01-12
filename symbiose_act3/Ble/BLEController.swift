@@ -82,13 +82,20 @@ class BLEController: UIViewController,CBPeripheralManagerDelegate, ObservableObj
         peripheralManager.stopAdvertising()
         
     }
+    
+    func sendGoValue(){
+        peripheralManager.updateValue("go".data(using: .utf8)!, for: myCharacteristic1!, onSubscribedCentrals: nil)
+    }
+    
     func sendEndValue(){
         peripheralManager.updateValue("endact3".data(using: .utf8)!, for: myCharacteristic1!, onSubscribedCentrals: nil)
     }
     
+    func sendReset() {
+        peripheralManager.updateValue("reset".data(using: .utf8)!, for: myCharacteristic1!, onSubscribedCentrals: nil)
+    }
+    
     func peripheralManager(_ peripheral: CBPeripheralManager, didReceiveRead request: CBATTRequest) {
-        
-        messageLabel = "Data getting Read"
         readValueLabel = value
       
         // Perform your additional operations here
@@ -96,12 +103,11 @@ class BLEController: UIViewController,CBPeripheralManagerDelegate, ObservableObj
     }
     
     func peripheralManager(_ peripheral: CBPeripheralManager, didReceiveWrite requests: [CBATTRequest]) {
-        
-        messageLabel = "Writing Data"
-       
         if let value = requests.first?.value {
            writeValueLabel = value.hexEncodedString2()
             //Perform here your additional operations on the data you get
+            if let string = String(bytes: value, encoding: .utf8) {                self.messageLabel = string
+            }
         }
     }
 }

@@ -17,6 +17,9 @@ struct ContentView: View {
         VStack {
             Text(tflite.resultsLabel)
             Text("\(tflite.resultsConfidence, specifier: "%.2f")")
+            Button("send end value"){
+                bleController.sendEndValue()
+            }
         }
         .padding()
         .onAppear(){
@@ -28,7 +31,11 @@ struct ContentView: View {
         }
         .onChange(of: bleController.messageLabel) { newValue in
             if (newValue == "start") {
-                tflite.load()
+                print("go")
+                bleController.sendGoValue()
+            }
+            if (newValue == "reset") {
+                bleController.sendReset()
             }
         }
         .onChange(of: tflite.resultsLabel) { newValue in
