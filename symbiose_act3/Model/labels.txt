@@ -1,6 +1,7 @@
-0 Pattern_1 300Hz
-1 Pattern_3 355Hz
-2 Pattern_4 373Hz
-3 Pattern_5 371Hz
-4 Pattern_6 369Hz
-5 Pattern_7 364Hz
+0 junk
+1 371_vague
+2 300_arc_rond
+3 397_deux_huite
+4 355_papillon
+5 375_ligne_vague
+6 274_arc

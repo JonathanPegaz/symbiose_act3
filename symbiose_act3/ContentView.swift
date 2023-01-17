@@ -13,10 +13,15 @@ struct ContentView: View {
     @StateObject var bleController : BLEController = BLEController()
     @StateObject var tflite:ViewController = ViewController()
     
+    @State var resultTime:Int = 0
+    @State var maxTime:Int = 10
+    @State var isFinished:Bool = false
+    
     var body: some View {
         VStack {
             Text(tflite.resultsLabel)
             Text("\(tflite.resultsConfidence, specifier: "%.2f")")
+            Text("\(resultTime) / \(maxTime)")
             Button("send end value"){
                 bleController.sendEndValue()
             }
@@ -24,24 +29,34 @@ struct ContentView: View {
         .padding()
         .onAppear(){
             bleController.load()
-            tflite.load()
         }
         .onChange(of: bleController.bleStatus) { newValue in
             bleController.addServices()
+            tflite.load()
         }
         .onChange(of: bleController.messageLabel) { newValue in
             if (newValue == "start") {
                 print("go")
                 bleController.sendGoValue()
+                
             }
             if (newValue == "reset") {
                 bleController.sendReset()
+                isFinished = false
+                resultTime = 0
+                tflite.resultsLabel = ""
+                tflite.resultsConfidence = 0.0
             }
+            bleController.messageLabel = ""
         }
         .onChange(of: tflite.resultsLabel) { newValue in
-            if(tflite.resultsLabel == "0 ok" && tflite.resultsConfidence > 0.8){
-                print("Contactble")
-                bleController.sendEndValue()
+            if(tflite.resultsLabel == "1 371_vague" && tflite.resultsConfidence > 0.8 && isFinished == false){
+                if (resultTime < maxTime) {
+                    resultTime = resultTime + 1
+                } else {
+                    bleController.sendEndValue()
+                    isFinished = true
+                }
             }
         }
     }
